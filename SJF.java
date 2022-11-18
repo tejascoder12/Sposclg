@@ -19,7 +19,7 @@ int k[]= new int[n];   // it is also stores brust time
  
     for (i=0;i<n;i++)
     {
-     pid[i]= i+1;
+     //pid[i]= i+1;
      System.out.println ("enter process " +(i+1)+ " arrival time:");
      at[i]= sc.nextInt();
      System.out.println("enter process " +(i+1)+ " burst time:");
@@ -68,7 +68,7 @@ int k[]= new int[n];   // it is also stores brust time
     System.out.println("pid  arrival  burst  complete turn waiting");
     for(i=0;i<n;i++)
     {
-     System.out.println(pid[i] +"\t"+ at[i]+"\t"+ k[i] +"\t"+ ct[i] +"\t"+ ta[i] +"\t"+ wt[i]);
+     System.out.println(i+1 +"\t"+ at[i]+"\t"+ k[i] +"\t"+ ct[i] +"\t"+ ta[i] +"\t"+ wt[i]);
     }
     
     System.out.println("\naverage tat is "+ (float)(avgta/n));
